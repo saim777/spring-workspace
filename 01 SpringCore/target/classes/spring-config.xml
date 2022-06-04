@@ -8,4 +8,8 @@ http://www.springframework.org/schema/context/spring-context.xsd">
     <bean id="student" class="beans.Student" factory-method="createInstance">
     </bean>
 
+    <bean id="thirdPartyObject" class="beans.ThirdPartyClass"></bean>
+
+    <bean id="courseObject" class="beans.Course" factory-bean="thirdPartyObject" factory-method="createCourseBean"></bean>
+
 </beans>
