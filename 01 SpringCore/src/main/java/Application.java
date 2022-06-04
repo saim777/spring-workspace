@@ -9,7 +9,7 @@ public class Application {
 
         var stud=(Student)context.getBean("student");
 
-        System.out.println(stud.firstName+" : "+stud.id);
+        System.out.println(stud +" "+stud.firstName+" : "+stud.id);
 
 
 

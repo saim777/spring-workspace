@@ -5,11 +5,7 @@
 http://www.springframework.org/schema/beans/spring-beans.xsd
 http://www.springframework.org/schema/context
 http://www.springframework.org/schema/context/spring-context.xsd">
-    <bean id="student" class="beans.Student">
-        <constructor-arg name="id">
-            <value>101</value>
-        </constructor-arg>
-        <constructor-arg name="firstName" value="saim"/>
+    <bean id="student" class="beans.Student" factory-method="createInstance">
     </bean>
 
 </beans>
